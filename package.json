@@ -1,0 +1,14 @@
+{
+  "name": "key-emitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ryuyutyo <liuyouchao111@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "emitter-helper": "^1.0.0"
+  }
+}
