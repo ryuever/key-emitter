@@ -3,17 +3,20 @@
 // 3: extends Emitter, it monitor the key code and will fire change when selected value change.
 // 4: the default value is 0;
 
-import Emitter from 'emitter-helper';
+import EmitterHelper from 'emitter-helper';
+
 import KeyCode from './KeyCode';
 
 const { UP, DOWN, ENTER } = KeyCode;
 
-class ArrowKeyHandler extends Emitter {
+class ArrowKeyHandler extends EmitterHelper {
   constructor(opts) {
     super();
 
     this.index = -1;
     this.max = opts.max;
+
+    if (typeof this.max === 'undefined') throw new Error(`option \`max\` is required`);
   }
 
   setState(keyCode) {
