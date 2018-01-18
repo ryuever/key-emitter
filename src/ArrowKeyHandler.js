@@ -9,7 +9,7 @@ import KeyCode from './KeyCode';
 
 const { UP, DOWN, ENTER } = KeyCode;
 
-class ArrowKeyHandler extends EmitterHelper {
+export default class ArrowKeyHandler extends EmitterHelper {
   constructor(opts) {
     super();
 
@@ -65,5 +65,3 @@ class ArrowKeyHandler extends EmitterHelper {
     this.max = max;
   }
 }
-
-module.exports = ArrowKeyHandler;
