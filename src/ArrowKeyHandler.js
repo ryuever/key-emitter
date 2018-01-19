@@ -35,7 +35,7 @@ export default class ArrowKeyHandler extends EmitterHelper {
 
   handleKeyUp() {
     const old = this.index;
-    this.index > 0 ? this.index-- : 0;
+    this.index = this.index > 0 ? --this.index : this.max - 1;
 
     old !== this.index && this.emit('change', {
       index: this.index,
@@ -44,7 +44,7 @@ export default class ArrowKeyHandler extends EmitterHelper {
 
   handleKeyDown() {
     const old = this.index;
-    this.index < this.max - 1 ? this.index++ : this.max - 1;
+    this.index = this.index < this.max - 1 ? ++this.index : 0;
 
     old !== this.index && this.emit('change', {
       index: this.index,
@@ -63,5 +63,9 @@ export default class ArrowKeyHandler extends EmitterHelper {
 
   setMax(max) {
     this.max = max;
+  }
+
+  reset() {
+    this.index = -1;
   }
 }
