@@ -15,3 +15,21 @@ for `commit handler`, it will receive a current triggered index value.
 #### max
 
 It's requried, which will indicate the max index value on key down or key up.
+
+### usage
+
+```js
+import { ArrowKeyHandler } from 'key-emitter';
+
+this.arrowHandler = new ArrowKeyHandler({
+  max: max,
+});
+
+this.arrowHandler.on('change', ({ index }) => {
+  // ...
+})
+
+this.arrowHandler.on('commit', ({ index }) => {
+  // ...
+})
+```
