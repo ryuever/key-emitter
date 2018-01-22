@@ -1,7 +1,7 @@
 {
   "name": "key-emitter",
   "version": "1.4.0",
-  "description": "",
+  "description": "minor snippet to react to key stroke",
   "main": "lib/key-emitter.cjs.js",
   "module": "lib/key-emitter.es.js",
   "scripts": {
@@ -37,5 +37,6 @@
     "lib",
     "src",
     "index.js"
-  ]
+  ],
+  "repository": "https://github.com/ryuever/key-emitter.git"
 }
