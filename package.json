@@ -1,6 +1,6 @@
 {
   "name": "key-emitter",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "minor snippet to react to key stroke",
   "main": "lib/key-emitter.cjs.js",
   "module": "lib/key-emitter.es.js",
