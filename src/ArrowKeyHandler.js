@@ -57,8 +57,16 @@ export default class ArrowKeyHandler extends EmitterHelper {
     });
   }
 
-  setIndex(index) {
+  setIndex(index, isCommit) {
+    const old = this.index;
+
     this.index = index;
+
+    const event = isCommit ? 'commit' : 'change';
+
+    old !== this.index && this.emit(event, {
+      index: this.index,
+    });
   }
 
   setMax(max) {
