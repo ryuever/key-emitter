@@ -1,6 +1,6 @@
 {
   "name": "key-emitter",
-  "version": "1.3.8",
+  "version": "1.3.9",
   "description": "",
   "main": "lib/key-emitter.cjs.js",
   "module": "lib/key-emitter.es.js",
