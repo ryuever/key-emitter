@@ -21,15 +21,15 @@ export default class ArrowKeyHandler extends EmitterHelper {
 
   setState(keyCode) {
     if (keyCode === UP) {
-      this.handleKeyUp();
+      return this.handleKeyUp();
     }
 
     if (keyCode === DOWN) {
-      this.handleKeyDown();
+      return this.handleKeyDown();
     }
 
     if (keyCode === ENTER) {
-      this.handleKeyEnter();
+      return this.handleKeyEnter();
     }
   }
 
